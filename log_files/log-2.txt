@@ -1,0 +1,19 @@
+timestamp: this was loaded at time TIME on day DAY
+user: by authenticated user AmandaIsAwesome, connecting from IP address FOO.
+
+total data uploaded is (large)
+
+packaged into bdbag (some bdbag reference here)
+
+loaded (this many) TSVs / (this many) tables, (this many) rows, etc. etc.
+this many distinct entities
+that many distinct foobars
+this is a level 0 ingest
+(stuff that's useful for debugging GOES HERE ^^^^)
+
+was turned into (some deriva catalog ID)
+
+---
+
+shell output of actual ingest GOES HERE
+
