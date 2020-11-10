@@ -273,10 +273,13 @@ Log for {ident}
 
 @app.route('/explore_ds')
 def explore_ds():
+    username = request.cookies.get('username')
     ident = request.args.get('id')
     ident = int(ident)
         
     return f"""
+username: {username} {superuser_text}
+<p>
 <h2>Exploring data set {ident}</h2>
 
 <img src='{ url_for('static', filename='chase-catalog-summary.png') }' width=40%>
