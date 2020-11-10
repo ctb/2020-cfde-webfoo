@@ -1,4 +1,4 @@
-from flask import request, make_response, redirect, url_for
+from flask import request, make_response, redirect, url_for, render_template
 from flask import Flask
 app = Flask(__name__)
 
@@ -55,14 +55,7 @@ def login():
         resp.set_cookie('superuser', str(is_superuser))
         return resp
     else:
-        return f"""
-<form method="post" action="/login">
-globus username: <input type="text" name="username">
-final approver today? <input type="checkbox" name="superuser">
-<p>
-<input type="submit">
-</form>
-"""
+        return render_template('login_form.html')
 
 @app.route('/logout')
 def logout():
